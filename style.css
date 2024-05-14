@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(2.jpg);
+    animation: changeImage 10s infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color:cornsilk;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+}
+nav .menu a:first-child{
+    color: #00b492;
+}
+main{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: blanchedalmond;
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing:3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0px 20px 0px ;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    color:#eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: all .5s ease;
+}
+section .buttontwo{
+    background:white;
+    color: #000;
+    
+}
+.buttontwo:hover{
+    background: #00b492;
+    color: white;
+
+}
+
+section .buttonone{
+    background: #00b492;
+    color: white;
+}
+.buttonone:hover{
+    background:white;
+    color: #000;
+
+}
+.change_containt:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b492;;
+}
+
+@keyframes changetext{
+    0%{content:"Lumbini"}
+    20%{content:"Manang" }
+    35%{content:"Parbat" }
+    60%{content:"Pokhara" }
+    80%{content:"Mustang" }
+    100%{content:"Ilam"}
+       
+    }
+
+
+      
